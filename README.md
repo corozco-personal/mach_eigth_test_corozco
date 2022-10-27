@@ -14,13 +14,13 @@ The script can be executed in two ways:
 1. Run the example given in the exercise to verify that it meets the expected output:
 
 ```shellscript
-app.py -test
+python3 app.py -test
 ```
 2. Run a particular example:
 ```shellscript
-app.py comma_separated_list target
+python3 app.py comma_separated_list target
 ```
 Example: 
 ```shellscript
-app.py 1,9,5,0,20,-4,12,16,7 12
+python3 app.py 1,9,5,0,20,-4,12,16,7 12
 ```

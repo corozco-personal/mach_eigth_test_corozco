@@ -9,14 +9,15 @@ The app.py file contains the solution according to the given problem (find the p
 
 # How to run
 
-The script can be executed in two ways:
+1. Clone the project and go to the main path
+2. The script can be executed in two ways:
 
-1. Run the example given in the exercise to verify that it meets the expected output:
+Run the example given in the exercise to verify that it meets the expected output:
 
 ```shellscript
 python3 app.py -test
 ```
-2. Run a particular example:
+Run a particular example:
 ```shellscript
 python3 app.py comma_separated_list target
 ```

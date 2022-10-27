@@ -6,7 +6,6 @@ import sys
 ## @param value given by user
 def find_pairs(arr, value) :
     possible_pairs = {}
-    result = {}
 
     for i in range(0,len(arr)) :
         current = arr[i] ## Assign value for readability
@@ -14,9 +13,9 @@ def find_pairs(arr, value) :
         ##Calculate the possible pair according to the current value on the list
         x = value - current
 
-        ## If the current value is already on the possible_pair map and is it's first ocurrence you have a valid sum pair
-        if possible_pairs.get(current) != None and result.get(current) == None :
-          result[current] = x
+        ## If the current value is already on the possible_pair map you have a valid sum pair
+        ## assume there is no repeat values
+        if possible_pairs.get(current) != None :
           print(arr[i], x)
         else :
           possible_pairs[x] = current
